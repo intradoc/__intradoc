@@ -1,3 +1,11 @@
+# [@intradoc/core-v2.0.1](https://github.com/intradoc/intradoc/compare/@intradoc/core-v2.0.0...@intradoc/core-v2.0.1) (2022-07-16)
+
+
+### Bug Fixes
+
+* **core:** fix different new line matching issues ([dadcdf7](https://github.com/intradoc/intradoc/commit/dadcdf70bcd3395dab2d312c46ebc35ecaa3df82))
+* **core:** fix windows newline regexp matching issues ([3c98537](https://github.com/intradoc/intradoc/commit/3c98537006ff092dae0294693087ed698c706f9a))
+
 # [@intradoc/core-v2.0.0](https://github.com/intradoc/intradoc/compare/@intradoc/core-v1.0.0...@intradoc/core-v2.0.0) (2022-07-16)
 
 
