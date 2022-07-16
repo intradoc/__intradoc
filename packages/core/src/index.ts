@@ -25,12 +25,15 @@ const pattern = [
 
 const regex = new RegExp(pattern, 'gis')
 
-export const replace = (content: string, data: Record<string, any>): string => {
-  return content.replace(
+export const replace = (content: string, data: Record<string, any>) => {
+  let numReplaced = 0
+
+  const newContent = content.replace(
     regex,
     (fullMatch, openA, tagNameA, openB, content, closeA, tagNameB, closeB) => {
       if (tagNameA in data) {
         content = data[tagNameA]
+        numReplaced++
       } else {
         return fullMatch
       }
@@ -44,4 +47,9 @@ export const replace = (content: string, data: Record<string, any>): string => {
       )
     }
   )
+
+  return {
+    content: newContent,
+    numReplaced,
+  }
 }

@@ -12,14 +12,15 @@ describe('core', () => {
       after,
     } = await simple1()
 
-    expect(
-      replace(
-        before,
-        {
-          content: 'new content'
-        }
-      )
-    ).toBe(after)
+    const result = replace(
+      before,
+      {
+        content: 'new content'
+      }
+    )
+
+    expect(result.content).toBe(after)
+    expect(result.numReplaced).toBe(1)
   })
 
   test('basic 2', async () => {
@@ -28,13 +29,14 @@ describe('core', () => {
       after,
     } = await simple2()
 
-    expect(
-      replace(
-        before,
-        {
-          Content: 'new content'
-        }
-      )
-    ).toBe(after)
+    const result = replace(
+      before,
+      {
+        Content: 'new content'
+      }
+    )
+
+    expect(result.content).toBe(after)
+    expect(result.numReplaced).toBe(1)
   })
 })

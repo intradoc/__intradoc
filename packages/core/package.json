@@ -1,9 +1,16 @@
 {
   "name": "@intradoc/core",
   "version": "0.0.0-development",
-  "description": "Core of @intradoc.",
+  "description": "Core package of @intradoc.",
   "author": "Richard King <richrdkng@gmail.com> (https://www.richrdkng.com)",
   "license": "ISC",
+  "main": "index.js",
+  "publishConfig": {
+    "access": "public"
+  },
+  "engines": {
+    "node": ">=14.x"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/intradoc/intradoc.git"
@@ -12,13 +19,6 @@
     "url": "https://github.com/intradoc/intradoc/issues"
   },
   "homepage": "https://github.com/intradoc/intradoc#readme",
-  "main": "index.js",
-  "publishConfig": {
-    "access": "public"
-  },
-  "engines": {
-    "node": ">=14.x"
-  },
   "keywords": [
     "update",
     "doc",
