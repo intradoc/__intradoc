@@ -7,8 +7,9 @@ jobs:
     strategy:
       matrix:
         # os: [ubuntu-latest, windows-latest, macos-latest]
-        os: [windows-latest]
-        version: [16, 18]
+        # version: [16, 18]
+        os: [ubuntu-latest]
+        version: [16]
 
     runs-on: ${{ matrix.os }}
     timeout-minutes: 10
