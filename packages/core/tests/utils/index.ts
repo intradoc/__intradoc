@@ -14,12 +14,12 @@ export const createFixture = (dir: string) => {
           const fixtureRoot = normalize(dir)
 
           const before = await readFile(
-            join(fixtureRoot, '/before.md'),
+            join(fixtureRoot, 'before.md'),
             'utf-8'
           )
 
           const after = await readFile(
-            join(fixtureRoot, '/after.md'),
+            join(fixtureRoot, 'after.md'),
             'utf-8'
           )
 
