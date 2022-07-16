@@ -7,7 +7,7 @@ help:
 $ npx ts-node ./tests
 
 version:
-$ npx ts-node ./tests
+$ npx ts-node ./tests --version
 
 test run:
 $ npx ts-node ./tests fixtures/run/test.md fixtures/run/test.json
