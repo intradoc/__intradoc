@@ -1,3 +1,10 @@
+# [intradoc-v1.0.2](https://github.com/intradoc/intradoc/compare/intradoc-v1.0.1...intradoc-v1.0.2) (2022-07-16)
+
+
+### Bug Fixes
+
+* **intradoc:** fix CLI bin missing shebang ([c123daf](https://github.com/intradoc/intradoc/commit/c123daf402c13821fd7e34b87aba431e8d6ad260))
+
 # [intradoc-v1.0.1](https://github.com/intradoc/intradoc/compare/intradoc-v1.0.0...intradoc-v1.0.1) (2022-07-16)
 
 
