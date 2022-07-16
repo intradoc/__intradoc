@@ -1,9 +1,16 @@
 {
   "name": "@intradoc/cli",
   "version": "0.0.0-development",
-  "description": "CLI of @intradoc.",
+  "description": "Internal CLI utility package of @intradoc.",
   "author": "Richard King <richrdkng@gmail.com> (https://www.richrdkng.com)",
   "license": "ISC",
+  "main": "index.js",
+  "publishConfig": {
+    "access": "public"
+  },
+  "engines": {
+    "node": ">=14.x"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/intradoc/intradoc.git"
@@ -12,13 +19,6 @@
     "url": "https://github.com/intradoc/intradoc/issues"
   },
   "homepage": "https://github.com/intradoc/intradoc#readme",
-  "main": "index.js",
-  "publishConfig": {
-    "access": "public"
-  },
-  "engines": {
-    "node": ">=14.x"
-  },
   "keywords": [
     "update",
     "doc",
@@ -28,17 +28,22 @@
     "in place",
     "util",
     "utils",
-    "cli",
     "intradoc"
   ],
   "scripts": {
-    "test": "echo \"UTILS TEST\""
+    "lint": "tsc --noEmit",
+    "test": "jest",
+    "prep:1": "rm -rf .dist && mkdir .dist",
+    "prep:2": "cp ../../LICENSE* README* package.json .dist",
+    "prep": "npm run prep:1 && npm run prep:2",
+    "build": "tsc --project tsconfig.build.json"
   },
   "devDependencies": {
     "@semantic-release/changelog": "^6.0.1",
     "@semantic-release/exec": "^6.0.3",
     "@semantic-release/git": "^10.0.1",
     "@tsconfig/node16": "^1.0.3",
+    "@types/fs-extra": "^9.0.13",
     "@types/jest": "^28.1.4",
     "@types/node": "^18.0.1",
     "jest": "^28.1.2",
@@ -49,5 +54,11 @@
     "tsconfig-paths": "^4.0.0",
     "tslib": "^2.4.0",
     "typescript": "^4.7.4"
+  },
+  "dependencies": {
+    "fs-extra": "^10.1.0",
+    "glob": "^8.0.3",
+    "json5": "^2.2.1",
+    "yaml": "^2.1.1"
   }
 }
