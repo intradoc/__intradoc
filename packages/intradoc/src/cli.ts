@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 import { replace } from '@intradoc/core'
 import { run } from '@intradoc/cli'
 
