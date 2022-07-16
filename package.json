@@ -1,5 +1,5 @@
 {
-  "name": "intradoc",
+  "name": "intradoc-monorepo",
   "version": "0.0.0-development",
   "description": "Monorepo of @intradoc.",
   "author": "Richard King <richrdkng@gmail.com> (https://www.richrdkng.com)",
@@ -14,7 +14,7 @@
   },
   "homepage": "https://github.com/intradoc/intradoc#readme",
   "engines": {
-    "node": ">=16.x"
+    "node": ">=14.x"
   },
   "workspaces": [
     "packages/*"
