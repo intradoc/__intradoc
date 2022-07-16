@@ -1,3 +1,10 @@
+# [intradoc-v1.0.1](https://github.com/intradoc/intradoc/compare/intradoc-v1.0.0...intradoc-v1.0.1) (2022-07-16)
+
+
+### Bug Fixes
+
+* **intradoc:** update dependency with newline fixes ([898fd6d](https://github.com/intradoc/intradoc/commit/898fd6d8292c5a2e9cebecd4c29e3bbd987b9b1f))
+
 # intradoc-v1.0.0 (2022-07-16)
 
 
