@@ -14,7 +14,7 @@
   },
   "homepage": "https://github.com/intradoc/intradoc#readme",
   "engines": {
-    "node": ">=14.x"
+    "node": ">=16.x"
   },
   "workspaces": [
     "packages/*"
